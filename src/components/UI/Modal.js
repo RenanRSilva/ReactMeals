@@ -1,9 +1,11 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import { Fragment } from "react";
 import ReactDOM from "react-dom";
 
 import classes from "./Modal.module.css";
 
 const Backdrop = (props) => {
+  // eslint-disable-next-line jsx-a11y/no-static-element-interactions
   return <div className={classes.backdrop} onClick={props.onClose} />;
 };
 
